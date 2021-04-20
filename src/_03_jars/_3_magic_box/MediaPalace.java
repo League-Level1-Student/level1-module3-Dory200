@@ -32,7 +32,9 @@ public class MediaPalace {
 		URL url = new URL(imageURL);
 		Icon icon = new ImageIcon(url);
 		return new JLabel(icon);
+		
 	}
+	
 
 	/*
 	 * To use this method, the image must be placed in your Eclipse project in the same package as this class.
