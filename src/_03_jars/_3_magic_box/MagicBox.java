@@ -102,8 +102,19 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// TODO Auto-generated method stub
-		label = media.loadImageFromWithinProject("wii.jpg");
-		frame.add(label);
+		System.out.println("Hello World");
+		if(e.getX() < backgroundImage.getWidth()) {
+			label = media.loadImageFromWithinProject("wii.jpg");
+			JFrame framee = new JFrame();
+			framee.setVisible(true);
+			framee.add(label);
+			framee.pack();
+		}
+		else {
+			media.playMusicOnComputer("src/_03_jars/_3_magic_box/Tao, Tao.mp3");
+		}
+		
+		
 		
 	}
 
